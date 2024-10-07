@@ -35,7 +35,7 @@ const initMap = (data) => {
 const getFeature = (feature, layer) => {
     if (!feature.properties.name) return;
     const name = feature.properties.name
-    //console.log(id)
+    //console.log(name)
 
     
     layer.bindTooltip(`${name}`)
