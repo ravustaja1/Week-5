@@ -27,20 +27,20 @@ const initMap = (data) => {
         "OpenStreetMap": osm
     }
 
-    let layerControl = L.control.layers(baseMaps).addTo(map);
+    L.control.layers(baseMaps).addTo(map);
 
     map.fitBounds(geoJson.getBounds())
 }
 
 const getFeature = (feature, layer) => {
-    if (!feature.properties.id) return;
-    const id = feature.properties.id
-    console.log(id)
-    layer.bindTooltip(feature.properties.id, {
-        permanent: false,
-        direction: "auto" 
-    }).addTo(map);
+    if (!feature.properties.name) return;
+    const name = feature.properties.name
+    //console.log(id)
 
+    
+    layer.bindTooltip(`${name}`)
+
+    
 }
 
 
