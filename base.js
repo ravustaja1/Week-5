@@ -22,11 +22,11 @@ const initMap = (data) => {
             weight: 2
         },
     }).addTo(map)
-
+/*
     let baseMaps = {
         "OpenStreetMap": osm
     }
-
+*/
     L.control.layers(baseMaps).addTo(map);
 
     map.fitBounds(geoJson.getBounds())
