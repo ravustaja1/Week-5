@@ -9,7 +9,7 @@ const fetchData = async () => {
 const initMap = (data) => {
     let map = L.map('map', {
         minZoom: -3
-    }).setView([61.0583, 28.1887], 12);
+    }).setView([61.05, 28.2], 12);
 
     let osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
