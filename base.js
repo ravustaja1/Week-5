@@ -30,7 +30,7 @@ const initMap = (data) => {
     L.control.layers(baseMaps).addTo(map);
 */
 
-    L.addTo(map);
+    //L.addTo(map);
     map.fitBounds(geoJson.getBounds());
 }
 
