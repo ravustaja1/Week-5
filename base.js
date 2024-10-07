@@ -27,10 +27,10 @@ const initMap = (data) => {
         "OpenStreetMap": osm
     }
 
-    L.control.layers().addTo(map);
+    L.control.layers(baseMaps).addTo(map);
 */
 
-    L.control.addTo(map);
+    L.addTo(map);
     map.fitBounds(geoJson.getBounds());
 }
 
