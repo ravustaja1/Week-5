@@ -27,7 +27,7 @@ const initMap = (data) => {
         "OpenStreetMap": osm
     }
 
-    //let layerControl = L.control.layers(baseMaps).addTo(map);
+    let layerControl = L.control.layers(baseMaps).addTo(map);
 
     map.fitBounds(geoJson.getBounds())
 }
