@@ -26,10 +26,12 @@ const initMap = (data) => {
     let baseMaps = {
         "OpenStreetMap": osm
     }
-*/
-    L.control.layers(baseMaps).addTo(map);
 
-    map.fitBounds(geoJson.getBounds())
+    L.control.layers().addTo(map);
+*/
+
+    L.control.addTo(map);
+    map.fitBounds(geoJson.getBounds());
 }
 
 const getFeature = (feature, layer) => {
